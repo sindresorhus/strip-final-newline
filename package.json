@@ -1,6 +1,6 @@
 {
   "name": "strip-eof",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Strip the End-Of-File (EOF) character from a string/buffer",
   "license": "MIT",
   "repository": "sindresorhus/strip-eof",
