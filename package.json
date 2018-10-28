@@ -1,6 +1,6 @@
 {
 	"name": "strip-final-newline",
-	"version": "1.0.0",
+	"version": "2.0.0",
 	"description": "Strip the final newline character from a string/buffer",
 	"license": "MIT",
 	"repository": "sindresorhus/strip-final-newline",
