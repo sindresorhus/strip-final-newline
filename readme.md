@@ -1,24 +1,26 @@
-# strip-eof [![Build Status](https://travis-ci.com/sindresorhus/strip-eof.svg?branch=master)](https://travis-ci.com/sindresorhus/strip-eof)
+# strip-final-newline [![Build Status](https://travis-ci.com/sindresorhus/strip-final-newline.svg?branch=master)](https://travis-ci.com/sindresorhus/strip-final-newline)
 
-> Strip the [End-Of-File](https://en.wikipedia.org/wiki/End-of-file) (EOF) character from a string/buffer
+> Strip the final [newline character](https://en.wikipedia.org/wiki/Newline) from a string/buffer
+
+Can be useful when parsing the output of, for example, `ChildProcess#execFile`, as [binaries usually output a newline at the end](https://stackoverflow.com/questions/729692/why-should-text-files-end-with-a-newline). Normally, you would use `stdout.trim()`, but that would also remove newlines at the start and whitespace.
 
 
 ## Install
 
 ```
-$ npm install strip-eof
+$ npm install strip-final-newline
 ```
 
 
 ## Usage
 
 ```js
-const stripEof = require('strip-eof');
+const stripFinalNewline = require('strip-final-newline');
 
-stripEof('foo\nbar\n\n');
+stripFinalNewline('foo\nbar\n\n');
 //=> 'foo\nbar\n'
 
-stripEof(Buffer.from('foo\nbar\n\n')).toString();
+stripFinalNewline(Buffer.from('foo\nbar\n\n')).toString();
 //=> 'foo\nbar\n'
 ```
 

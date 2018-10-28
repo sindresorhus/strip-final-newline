@@ -1,9 +1,9 @@
 {
-	"name": "strip-eof",
+	"name": "strip-final-newline",
 	"version": "1.0.0",
 	"description": "Strip the final newline character from a string/buffer",
 	"license": "MIT",
-	"repository": "sindresorhus/strip-eof",
+	"repository": "sindresorhus/strip-final-newline",
 	"author": {
 		"name": "Sindre Sorhus",
 		"email": "sindresorhus@gmail.com",
