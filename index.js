@@ -1,15 +1,16 @@
 'use strict';
-module.exports = function (x) {
-	var lf = typeof x === 'string' ? '\n' : '\n'.charCodeAt();
-	var cr = typeof x === 'string' ? '\r' : '\r'.charCodeAt();
 
-	if (x[x.length - 1] === lf) {
-		x = x.slice(0, x.length - 1);
+module.exports = input => {
+	const LF = typeof input === 'string' ? '\n' : '\n'.charCodeAt();
+	const CR = typeof input === 'string' ? '\r' : '\r'.charCodeAt();
+
+	if (input[input.length - 1] === LF) {
+		input = input.slice(0, input.length - 1);
 	}
 
-	if (x[x.length - 1] === cr) {
-		x = x.slice(0, x.length - 1);
+	if (input[input.length - 1] === CR) {
+		input = input.slice(0, input.length - 1);
 	}
 
-	return x;
+	return input;
 };
