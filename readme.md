@@ -1,4 +1,4 @@
-# strip-final-newline [![Build Status](https://travis-ci.com/sindresorhus/strip-final-newline.svg?branch=master)](https://travis-ci.com/sindresorhus/strip-final-newline)
+# strip-final-newline
 
 > Strip the final [newline character](https://en.wikipedia.org/wiki/Newline) from a string/buffer
 
