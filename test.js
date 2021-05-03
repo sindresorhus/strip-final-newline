@@ -1,5 +1,5 @@
 import test from 'ava';
-import stripFinalNewline from '.';
+import stripFinalNewline from './index.js';
 
 test('string', t => {
 	t.is(stripFinalNewline('foo\n'), 'foo');
