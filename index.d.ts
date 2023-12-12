@@ -1,7 +1,6 @@
 /**
 Strip the final [newline character](https://en.wikipedia.org/wiki/Newline) from a string/Buffer/Uint8Array.
 
-@param input
 @returns The input without any final newline.
 
 @example
