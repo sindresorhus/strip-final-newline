@@ -18,4 +18,4 @@ new TextDecoder().decode(stripFinalNewline(uint8Array));
 //=> 'foo\nbar\n'
 ```
 */
-export default function stripFinalNewline< T extends string | Uint8Array >(input: T): T;
+export default function stripFinalNewline<T extends string | Uint8Array>(input: T): T;
