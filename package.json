@@ -11,15 +11,19 @@
 		"url": "https://sindresorhus.com"
 	},
 	"type": "module",
-	"exports": "./index.js",
+	"exports": {
+		"types": "./index.d.ts",
+		"default": "./index.js"
+	},
 	"engines": {
 		"node": ">=18"
 	},
 	"scripts": {
-		"test": "xo && ava"
+		"test": "xo && ava && tsd"
 	},
 	"files": [
-		"index.js"
+		"index.js",
+		"index.d.ts"
 	],
 	"keywords": [
 		"strip",
@@ -37,7 +41,9 @@
 		"buffer"
 	],
 	"devDependencies": {
+		"@types/node": "^20.10.4",
 		"ava": "^6.0.1",
+		"tsd": "^0.29.0",
 		"xo": "^0.56.0"
 	}
 }

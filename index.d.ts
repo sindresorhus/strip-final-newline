@@ -1,0 +1,24 @@
+import {type Buffer} from 'node:buffer';
+
+/**
+Strip the final [newline character](https://en.wikipedia.org/wiki/Newline) from a string/Buffer/Uint8Array.
+
+@param input
+@returns The input without any final newline
+
+@example
+```
+import stripFinalNewline from 'strip-final-newline';
+
+stripFinalNewline('foo\nbar\n\n');
+//=> 'foo\nbar\n'
+
+stripFinalNewline(Buffer.from('foo\nbar\n\n')).toString();
+//=> 'foo\nbar\n'
+
+const uint8Array = new TextEncoder().encode('foo\nbar\n\n')
+new TextDecoder().decode(stripFinalNewline(uint8Array));
+//=> 'foo\nbar\n'
+```
+*/
+export default function stripFinalNewline< T extends string | Buffer | Uint8Array >(input: T): T;
