@@ -4,7 +4,7 @@ export default function stripFinalNewline(input) {
 	}
 
 	if (!ArrayBuffer.isView(input) || input.BYTES_PER_ELEMENT !== 1) {
-		throw new Error('Input must be a string, a Buffer or a Uint8Array');
+		throw new Error('Input must be a string or a Uint8Array');
 	}
 
 	return stripFinalNewlineBinary(input);
