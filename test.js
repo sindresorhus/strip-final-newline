@@ -1,3 +1,4 @@
+import {Buffer} from 'node:buffer';
 import test from 'ava';
 import stripFinalNewline from './index.js';
 
