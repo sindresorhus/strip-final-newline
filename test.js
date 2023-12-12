@@ -20,7 +20,7 @@ const inputs = [
 	'foo\n\n\n',
 	'foo\r\n',
 	'foo\r',
-	'foo\n\r\n'
+	'foo\n\r\n',
 ];
 
 const outputs = [
@@ -29,7 +29,7 @@ const outputs = [
 	'foo\n\n',
 	'foo',
 	'foo\r',
-	'foo\n'
+	'foo\n',
 ];
 
 const identity = input => input;
