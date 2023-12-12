@@ -1,5 +1,3 @@
-import {type Buffer} from 'node:buffer';
-
 /**
 Strip the final [newline character](https://en.wikipedia.org/wiki/Newline) from a string/Buffer/Uint8Array.
 
@@ -21,4 +19,4 @@ new TextDecoder().decode(stripFinalNewline(uint8Array));
 //=> 'foo\nbar\n'
 ```
 */
-export default function stripFinalNewline< T extends string | Buffer | Uint8Array >(input: T): T;
+export default function stripFinalNewline< T extends string | Uint8Array >(input: T): T;

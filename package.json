@@ -1,7 +1,7 @@
 {
 	"name": "strip-final-newline",
 	"version": "3.0.0",
-	"description": "Strip the final newline character from a string/buffer",
+	"description": "Strip the final newline character from a string/buffer/Uint8Array",
 	"license": "MIT",
 	"repository": "sindresorhus/strip-final-newline",
 	"funding": "https://github.com/sponsors/sindresorhus",
