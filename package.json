@@ -1,7 +1,7 @@
 {
 	"name": "strip-final-newline",
 	"version": "3.0.0",
-	"description": "Strip the final newline character from a string/buffer/Uint8Array",
+	"description": "Strip the final newline character from a string or Uint8Array",
 	"license": "MIT",
 	"repository": "sindresorhus/strip-final-newline",
 	"funding": "https://github.com/sponsors/sindresorhus",
@@ -38,10 +38,9 @@
 		"linebreak",
 		"character",
 		"string",
-		"buffer"
+		"uint8array"
 	],
 	"devDependencies": {
-		"@types/node": "^20.10.4",
 		"ava": "^6.0.1",
 		"tsd": "^0.29.0",
 		"xo": "^0.56.0"

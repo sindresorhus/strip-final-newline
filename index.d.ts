@@ -1,5 +1,5 @@
 /**
-Strip the final [newline character](https://en.wikipedia.org/wiki/Newline) from a string/Buffer/Uint8Array.
+Strip the final [newline character](https://en.wikipedia.org/wiki/Newline) from a string or Uint8Array.
 
 @returns The input without any final newline.
 
@@ -8,9 +8,6 @@ Strip the final [newline character](https://en.wikipedia.org/wiki/Newline) from 
 import stripFinalNewline from 'strip-final-newline';
 
 stripFinalNewline('foo\nbar\n\n');
-//=> 'foo\nbar\n'
-
-stripFinalNewline(Buffer.from('foo\nbar\n\n')).toString();
 //=> 'foo\nbar\n'
 
 const uint8Array = new TextEncoder().encode('foo\nbar\n\n')
