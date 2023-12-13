@@ -22,3 +22,13 @@ const uint8Array = new TextEncoder().encode('foo\nbar\n\n')
 new TextDecoder().decode(stripFinalNewline(uint8Array));
 //=> 'foo\nbar\n'
 ```
+
+## Performance
+
+When using an `Uint8Array`, the original value is referenced, not copied. This is much more efficient, requires almost no memory, and remains milliseconds fast even on very large inputs.
+
+If you'd like to ensure that modifying the return value does not also modify the value passed as input, please use `.slice()`.
+
+```js
+const value = new TextDecoder().decode(stripFinalNewline(uint8Array)).slice();
+```
