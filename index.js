@@ -3,7 +3,7 @@ export default function stripFinalNewline(input) {
 		return stripFinalNewlineString(input);
 	}
 
-	if (!ArrayBuffer.isView(input) || input.BYTES_PER_ELEMENT !== 1) {
+	if (!(ArrayBuffer.isView(input) && input.BYTES_PER_ELEMENT === 1)) {
 		throw new Error('Input must be a string or a Uint8Array');
 	}
 

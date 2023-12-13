@@ -2,7 +2,11 @@ import test from 'ava';
 import stripFinalNewline from './index.js';
 
 const invalidType = async (t, input) => {
-	t.throws(() => stripFinalNewline(input), {message: /Input must be/});
+	t.throws(() => {
+		stripFinalNewline(input);
+	}, {
+		message: /Input must be/,
+	});
 };
 
 test('Invalid type - boolean', invalidType, true);

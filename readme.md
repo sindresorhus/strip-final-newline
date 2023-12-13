@@ -30,5 +30,5 @@ When using an `Uint8Array`, the original value is referenced, not copied. This i
 If you'd like to ensure that modifying the return value does not also modify the value passed as input, please use `.slice()`.
 
 ```js
-const value = new TextDecoder().decode(stripFinalNewline(uint8Array)).slice();
+const value = new TextDecoder().decode(stripFinalNewline(uint8Array).slice());
 ```
